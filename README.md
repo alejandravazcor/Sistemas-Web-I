@@ -14,6 +14,6 @@ Proyecto de grupo (PujaCampus): [jorgeegonzaalez/sw1](https://github.com/jorgeeg
 | 3 · HTML | — | [Ejercicio](tema-03-html/ejercicio/) | 🟡 Entregado, pendiente de repasar |
 | 4 · CSS | — | [Ejercicio 1](tema-04-css/ejercicio-1/) · Ejercicio 2 (Bootstrap) | 🟡 |
 | 5 · JavaScript | — | Condicionales · Contraseña · Ej. 2 · Canvas · jQuery · Tampermonkey | ⏳ |
-| 6 · Node.js | — | Ejercicios 1 a 6 | ⏳ |
+| 6 · Node.js | — | [Ejercicio 5 (Express Generator)](tema-06-nodejs/ejercicio-5/) · Ej. 1-4 y 6 | 🟡 |
 
 ✅ hecho · 🟡 a medias · ⏳ pendiente

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <!-- <%= title %> se sustituye por el valor que manda el servidor -->
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <header>
+      <h1><%= title %></h1>
+
+      <% if (usuario) { %>
+        <!-- Esto solo aparece si el login ha ido bien -->
+        <p>Hola, <strong><%= usuario %></strong> 👋</p>
+      <% } else { %>
+        <!-- Botón para ir a la página de login -->
+        <a class="boton" href="/login">Iniciar sesión</a>
+      <% } %>
+    </header>
+
+    <main>
+      <h2>Productos (cargados desde el servidor)</h2>
+
+      <ul class="productos">
+        <%# Recorremos el array "productos" que nos ha mandado routes/index.js.
+            La etiqueta con % sola ejecuta JavaScript sin pintar nada (el bucle).
+            La etiqueta con %= pinta el valor dentro del HTML. %>
+        <% productos.forEach(function(producto) { %>
+          <li>
+            <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
+            <span class="nombre"><%= producto.nombre %></span>
+            <span class="precio"><%= producto.precio %> €</span>
+          </li>
+        <% }); %>
+      </ul>
+    </main>
+  </body>
+</html>
